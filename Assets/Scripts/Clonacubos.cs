@@ -3,11 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Clonacubos : MonoBehaviour
-{
+
+{public Gameobject cuboPrefab;
     // Start is called before the first frame update
     void Start()
+    
     {
-        
+        Instantiate(cuboPrefab);
     }
 
     // Update is called once per frame
@@ -15,4 +17,7 @@ public class Clonacubos : MonoBehaviour
     {
         
     }
+}
+public void ClonarCubo(){
+    Instantiate(cuboPrefab);
 }
